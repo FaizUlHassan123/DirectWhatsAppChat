@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DirectWhatsAppChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Rez-7r-JFy">
+                                <rect key="frame" x="20" y="342" width="374" height="212"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8A-yZ-On5">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="110"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp-Emblem" translatesAutoresizingMaskIntoConstraints="NO" id="RqR-Ye-1ie">
+                                                <rect key="frame" x="37" y="20" width="300" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="WZO-E8-DEF"/>
+                                                    <constraint firstAttribute="width" constant="300" id="hoe-RC-lav"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="RqR-Ye-1ie" firstAttribute="centerY" secondItem="Z8A-yZ-On5" secondAttribute="centerY" id="WSo-mU-et4"/>
+                                            <constraint firstItem="RqR-Ye-1ie" firstAttribute="centerX" secondItem="Z8A-yZ-On5" secondAttribute="centerX" id="vNg-2V-6e7"/>
+                                            <constraint firstItem="RqR-Ye-1ie" firstAttribute="top" secondItem="Z8A-yZ-On5" secondAttribute="top" constant="20" id="zS9-Pr-Z7q"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8Ff-b1-gku">
+                                        <rect key="frame" x="0.0" y="116" width="374" height="45"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7z-aQ-oCX" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="cZG-pR-B4k"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1he-DE-Q1s">
+                                        <rect key="frame" x="0.0" y="167" width="374" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="xg6-41-CfM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Open DirectChat"/>
+                                        <connections>
+                                            <action selector="whtapp_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVh-17-Bjy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.89803921568627454" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rez-7r-JFy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Nnp-yy-lFj"/>
+                            <constraint firstItem="Rez-7r-JFy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XtT-LS-Dzp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rez-7r-JFy" secondAttribute="trailing" constant="20" id="mUI-Py-Lgh"/>
+                            <constraint firstItem="Rez-7r-JFy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rUy-J7-c4D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mobileNumber" destination="W7z-aQ-oCX" id="d0o-SI-Bmb"/>
+                        <outlet property="whats_app_btn" destination="1he-DE-Q1s" id="leC-gu-x66"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WhatsApp-Emblem" width="1280" height="720"/>
+    </resources>
+</document>

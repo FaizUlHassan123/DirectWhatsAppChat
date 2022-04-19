@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "phonenumberkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marmelroy/PhoneNumberKit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "87102a81abd04b9aef85d63b4c8b827c3ae05eea"
+      }
+    },
+    {
+      "identity" : "swifterswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwifterSwift/SwifterSwift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "64fee067b71a0e99019b49dfa122aa802729420a"
+      }
+    }
+  ],
+  "version" : 2
+}
