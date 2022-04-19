@@ -3,4 +3,4 @@
 Open a chat on Whatsapp without saving contacts.
 
 
-<img src="assets/demo.jpg" width="40%">
+<img src="DirectWhatsAppChat/assets/demo.jpg" width="40%">
