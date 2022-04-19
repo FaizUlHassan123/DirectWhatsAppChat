@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,12 +40,29 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8Ff-b1-gku">
                                         <rect key="frame" x="0.0" y="122" width="374" height="45"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7z-aQ-oCX" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPL-A4-W1H">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
-                                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7z-aQ-oCX" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
+                                                        <rect key="frame" x="8" y="0.0" width="358" height="45"/>
+                                                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="W7z-aQ-oCX" firstAttribute="top" secondItem="MPL-A4-W1H" secondAttribute="top" id="7bL-zS-GdF"/>
+                                                    <constraint firstItem="W7z-aQ-oCX" firstAttribute="leading" secondItem="MPL-A4-W1H" secondAttribute="leading" constant="8" id="MiY-mq-o4Q"/>
+                                                    <constraint firstAttribute="trailing" secondItem="W7z-aQ-oCX" secondAttribute="trailing" constant="8" id="R4A-40-8h1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="W7z-aQ-oCX" secondAttribute="bottom" id="Uyb-jf-FAQ"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="cZG-pR-B4k"/>
@@ -75,6 +93,7 @@
                     </view>
                     <connections>
                         <outlet property="mobileNumber" destination="W7z-aQ-oCX" id="d0o-SI-Bmb"/>
+                        <outlet property="mobileNumber_backView" destination="MPL-A4-W1H" id="8L0-Zu-Fu2"/>
                         <outlet property="whats_app_btn" destination="1he-DE-Q1s" id="leC-gu-x66"/>
                     </connections>
                 </viewController>
@@ -85,5 +104,8 @@
     </scenes>
     <resources>
         <image name="WhatsApp-Emblem" width="1280" height="720"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

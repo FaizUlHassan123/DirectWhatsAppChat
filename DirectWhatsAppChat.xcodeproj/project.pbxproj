@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E328596280EB649004EF37D /* UIVIEWCONTROLLEREXt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E328595280EB649004EF37D /* UIVIEWCONTROLLEREXt.swift */; };
 		5E482DFA280EA41E00AB0BB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482DF9280EA41E00AB0BB5 /* AppDelegate.swift */; };
 		5E482DFC280EA41E00AB0BB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482DFB280EA41E00AB0BB5 /* SceneDelegate.swift */; };
 		5E482DFE280EA41E00AB0BB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482DFD280EA41E00AB0BB5 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E328595280EB649004EF37D /* UIVIEWCONTROLLEREXt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIEWCONTROLLEREXt.swift; sourceTree = "<group>"; };
 		5E482DF6280EA41E00AB0BB5 /* DirectWhatsAppChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectWhatsAppChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E482DF9280EA41E00AB0BB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E482DFB280EA41E00AB0BB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		5E482E0D280EA62E00AB0BB5 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5E328595280EB649004EF37D /* UIVIEWCONTROLLEREXt.swift */,
 				5E482E11280EA79700AB0BB5 /* Alert */,
 				5E482E14280EA89900AB0BB5 /* UITExtField.swift */,
 				5E482E1C280EAE8800AB0BB5 /* UIColor.swift */,
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E482DFE280EA41E00AB0BB5 /* ViewController.swift in Sources */,
+				5E328596280EB649004EF37D /* UIVIEWCONTROLLEREXt.swift in Sources */,
 				5E482E1D280EAE8800AB0BB5 /* UIColor.swift in Sources */,
 				5E482DFA280EA41E00AB0BB5 /* AppDelegate.swift in Sources */,
 				5E482E15280EA89900AB0BB5 /* UITExtField.swift in Sources */,

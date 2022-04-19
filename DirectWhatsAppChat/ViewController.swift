@@ -15,17 +15,24 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mobileNumber:PhoneNumberTextField!{
         didSet{
-            mobileNumber.placeholder = "+1"
-            mobileNumber.backgroundColor = UIColor(hexString: "FAFAFA")
-            mobileNumber.layer.borderColor = UIColor(hexString: "EFEFEF")?.cgColor
-            mobileNumber.layer.borderWidth = 1
-            mobileNumber.keyboardType = .numberPad
-            mobileNumber.layer.cornerRadius = 4
+            mobileNumber.backgroundColor = .clear
             mobileNumber.withFlag = true
             mobileNumber.withPrefix = true
             mobileNumber.withExamplePlaceholder = true
+            mobileNumber.withDefaultPickerUI = true
+            mobileNumber.countryCodePlaceholderColor = .darkGray
         }
     }
+
+    @IBOutlet weak var mobileNumber_backView:UIView!{
+        didSet{
+            mobileNumber_backView.backgroundColor = UIColor(hexString: "FAFAFA")
+            mobileNumber_backView.layer.borderColor = UIColor(hexString: "EFEFEF")?.cgColor
+            mobileNumber_backView.layer.borderWidth = 1
+            mobileNumber_backView.layer.cornerRadius = 8
+        }
+    }
+
 
     @IBOutlet weak var whats_app_btn:UIButton!{
         didSet{
@@ -37,7 +44,6 @@ class ViewController: UIViewController {
 
     @IBAction func whtapp_action(_ sender:UIButton){
 
-
         if self.mobileNumber.isEmpty {
             Alert.showAlert(vc: self, title: "Error", message: "Mobile Number is Requiered.")
 
@@ -46,7 +52,7 @@ class ViewController: UIViewController {
             do {
                 let phoneNumber = try phoneNumberKit.parse(self.mobileNumber.text ?? "", ignoreType: true)
                 let number = self.phoneNumberKit.format(phoneNumber, toType: .e164)
-                self.mobileNumber.text = number
+//                self.mobileNumber.text = number
                 self.open_whatsApp(number)
 
             } catch {
@@ -60,8 +66,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
+        self.hideKeyBoardOnTap()
     }
 
     func open_whatsApp(_ number:String){
