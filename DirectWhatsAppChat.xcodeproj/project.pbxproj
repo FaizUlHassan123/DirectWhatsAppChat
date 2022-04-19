@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E328596280EB649004EF37D /* UIVIEWCONTROLLEREXt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E328595280EB649004EF37D /* UIVIEWCONTROLLEREXt.swift */; };
-		5E328599280EB7E9004EF37D /* EAD28B4B-3800-40E0-9A40-70D37A4A1991.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E328598280EB7E9004EF37D /* EAD28B4B-3800-40E0-9A40-70D37A4A1991.jpg */; };
+		5E328599280EB7E9004EF37D /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E328598280EB7E9004EF37D /* demo.jpg */; };
 		5E482DFA280EA41E00AB0BB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482DF9280EA41E00AB0BB5 /* AppDelegate.swift */; };
 		5E482DFC280EA41E00AB0BB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482DFB280EA41E00AB0BB5 /* SceneDelegate.swift */; };
 		5E482DFE280EA41E00AB0BB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E482DFD280EA41E00AB0BB5 /* ViewController.swift */; };
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		5E328595280EB649004EF37D /* UIVIEWCONTROLLEREXt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIEWCONTROLLEREXt.swift; sourceTree = "<group>"; };
-		5E328598280EB7E9004EF37D /* EAD28B4B-3800-40E0-9A40-70D37A4A1991.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EAD28B4B-3800-40E0-9A40-70D37A4A1991.jpg"; sourceTree = "<group>"; };
+		5E328598280EB7E9004EF37D /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
 		5E482DF6280EA41E00AB0BB5 /* DirectWhatsAppChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectWhatsAppChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E482DF9280EA41E00AB0BB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E482DFB280EA41E00AB0BB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		5E328597280EB7DB004EF37D /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				5E328598280EB7E9004EF37D /* EAD28B4B-3800-40E0-9A40-70D37A4A1991.jpg */,
+				5E328598280EB7E9004EF37D /* demo.jpg */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E328599280EB7E9004EF37D /* EAD28B4B-3800-40E0-9A40-70D37A4A1991.jpg in Resources */,
+				5E328599280EB7E9004EF37D /* demo.jpg in Resources */,
 				5E482E06280EA42200AB0BB5 /* LaunchScreen.storyboard in Resources */,
 				5E482E03280EA42200AB0BB5 /* Assets.xcassets in Resources */,
 				5E482E01280EA41E00AB0BB5 /* Main.storyboard in Resources */,
